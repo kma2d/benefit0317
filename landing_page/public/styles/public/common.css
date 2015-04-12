@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------
+	■共通
+	■HeaderArea
+	■SideArea
+	■MainArea
+	■FooterArea
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+	共通
+-------------------------------------------------- */
+body{
+	color:#222222;
+	font-size:14px;
+	font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	background-color: #FFFFFF;
+}
+form *{font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
+body.English, body.English form *{font-family:'Maven Pro', Meiryo, 'Hiragino Kaku Gothic Pro', Osaka, 'MS PGothic', sans-serif;}
+a{
+	color:#666666;
+	text-decoration:underline;
+}
+a:hover{text-decoration:none;}
+a.Btn,
+a.BtnM{text-decoration:none;}
+.Case{margin:0 auto;}
+
+.TColorW{color:#FFFFFF;}
+.TBold{font-weight:bold;}
+.TNormal{font-weight:normal;}
+.LineNormal{line-height:1.8em;}
+.TStrong{font-weight:bold;}
+
+.fb-share-button{
+	height:18px;
+	overflow:hidden;
+}
+
+
+/* ====================[ HeaderArea ]========== */
+#HeaderArea{
+	width:100%;
+	height:26px;
+	position:fixed;
+	z-index:1000;
+}
+#HeaderArea h1{
+	padding:5px 0 1px 200px;
+	color:#202020;
+	font-size:12px;
+	font-weight:bold;
+	line-height:20px;
+}
+body.English #HeaderArea h1{font-family:'Maven Pro',Arial, Helvetica, sans-serif;}
+#HeaderArea #TNV{ margin-right:35px }
+#HeaderArea #TNV li{
+	height:26px;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Maven Pro',Arial, Helvetica, sans-serif;
+	letter-spacing:0;
+	margin-left:8px;
+}
+#HeaderArea #TNV li a{
+	padding:3px 13px 3px 33px;
+	display:block;
+	color:#FFFFFF;
+	line-height:20px;
+	text-decoration:none;
+	background-color:#222222;
+	background-repeat:no-repeat;
+	background-position:10px 50%;
+}
+#HeaderArea #TNV li a:hover{color:#FFCC00;}
+#HeaderArea #TNV li a span{
+	width:26px;
+	padding:3px 0;
+	display:block;
+	color:#CCCCCC;
+	text-align:center;
+	background:#FFFFFF;
+	cursor:pointer;
+}
+#HeaderArea #TNV li a span.en{margin-left:1px;}
+#HeaderArea #TNV li a span.ThisLang{color:#111111;}
+#HeaderArea #TNV li a:hover span{color:#FFCC00;}
+#HeaderArea #TNV li a:hover span.ThisLang{color:#111111;}
+
+#HeaderArea #TNV #TNV01 a{background-image:url(./images/public/Common_Icon00.png);}
+#HeaderArea #TNV #TNV02 a{background-image:url(./images/public/Common_Icon01.png);}
+#HeaderArea #TNV #TNV03 a{background-image:url(./images/public/Common_Icon02.png);}
+#HeaderArea #TNV #TNV04 a{
+	padding:0;
+	background:none;
+	color:#CCCCCC;
+}
+#HeaderArea #Social{padding:0 10px 0 0;}
+#HeaderArea #Social .twitter-share-button{
+	position:relative;
+	top:2px;
+	left:20px;
+}
+
+
+
+/* ====================[ SideArea ]========== */
+#SideArea{
+	width:180px;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1100;
+}
+#SideArea #LogoArea{
+	width:180px;
+	height:180px;
+}
+#SideArea #LogoArea a{
+	width:180px;
+	height:180px;
+	display:block;
+	text-indent:-5000px;
+	background:url(./images/public/Common_Logo01.png) no-repeat 0 0;
+}
+#SideArea #GNV{
+	background-color:#111111;
+	border-top:1px solid #444444;
+	height:100%;
+}
+#SideArea #GNV li{
+	font-size:11px;
+	font-weight:bold;
+	font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	text-align:left;
+	border-bottom:1px solid #444444;
+}
+body.English #SideArea #GNV li{font-family:'Maven Pro',Arial, Helvetica, sans-serif;}
+#SideArea #GNV li h3{}
+#SideArea #GNV li a,
+#SideArea #GNV li span{
+	width:150px;
+	padding:6px 10px 6px 20px;
+	display:block;
+	color:#666666;
+	text-decoration:none;
+	background-color:#222222;
+	cursor:pointer;
+}
+#SideArea #GNV li h3 a,
+#SideArea #GNV li h3 span{
+	width:156px;
+	padding:12px 12px 10px;
+	font-size:12px;
+	line-height:19px;
+	background-color:#111111;
+}
+#SideArea #GNV li h3 span{
+	background-image:url(./images/public/Common_Icon04.png);
+	background-position:91% 50%;
+	background-repeat:no-repeat;
+}
+#SideArea #GNV li h3 span.Open{
+	background-image:url(./images/public/Common_Icon05.png);
+}
+#SideArea #GNV li h3 .Back{
+	text-indent:33px;
+	background-image:url(./images/public/Common_Icon11.png);
+	background-position:7% 50%;
+	background-repeat:no-repeat;
+}
+#SideArea #GNV li ul{
+	display:none;
+	border-top:1px solid #444444;
+}
+#SideArea #GNV li ul li{border-bottom:none;}
+#SideArea #GNV li a:hover,
+#SideArea #GNV li span:hover{color:#FFCC00;}
+#SideArea #GNV li h3 span:hover{color:#666666; background-color:#333333;}
+#SideArea #GNV li .Now{color:#FFFFFF;}
+#SideArea #GNV li h3 .Now:hover{color:#FFFFFF;}
+#SideArea #GNV li h3 .Open{background-color:#333333;}
+#SideArea #GNV li.New a{background-image:url(./images/public/Common_New_Off.png); background-repeat:no-repeat; background-position:138px 5px;}
+#SideArea #GNV li.New a.Now{background-image:url(./images/public/Common_New_On.png);}
+
+#SideArea #Link{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	text-align:left;
+}
+#SideArea #Link li a{
+	height:26px;
+	display:block;
+	margin:3px 0;
+	padding:0 0 0 45px;
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+	line-height:26px;
+	text-decoration:none;
+	background-repeat:no-repeat;
+	background-position:10px 100%;
+}
+#SideArea #Link li a:hover{
+	color:#FFCC00;
+	background-position:10px 0;
+}
+#SideArea #Link #Mail a{background-image:url(./images/public/Common_Icon06.png);}
+#SideArea #Link #Tech a{background-image:url(./images/public/Common_Icon07.png);}
+#SideArea #Link #Banner{padding:10px 0 0 0 ;}
+#SideArea #Link #Banner a{
+	height:auto;
+	width:170px;
+	margin:0;
+	padding:15px 5px 13px;
+	color:#111111;
+	font-size:12px;
+	line-height:1.4em;
+	text-align:center;
+	background:#FFCC00;
+}
+#SideArea #Link #Banner a span{
+	font-family:'Maven Pro';
+	font-size:18px;
+	font-weight:bold;
+}
+body.English #SideArea #GNV li h3 a,
+body.English #SideArea #GNV li h3 span{
+	padding:11px 12px;
+	font-size:14px;
+}
+body.English #SideArea #Link #Banner a span{font-size:16px;}
+body.English #SideArea #Link li a{font-size:14px;}
+
+/* ====================[ MainArea ]========== */
+#MainArea{padding:0 0 0 180px;}
+#MainArea .Case{padding:50px 20px 0;}
+#MainArea .Case h3{
+	font-size:28px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:30px;
+	text-align:left;
+}
+#MainArea .Case .Bdr{
+	margin:17px 0 20px;
+	padding:1px;
+	text-align:left;
+	border:1px solid #D7D7D7;
+	background:#FFFFFF;
+}
+#MainArea .Case .Bdr h4{
+	padding:8px 20px 6px;
+	color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	line-height:20px;
+	background:#222222;
+}
+#MainArea .Case .Bdr .Box{padding:25px 40px;}
+
+#InfoTech dl,#InfoTech dl > dd{
+    margin:10px 0;
+}
+
+/* ====================[ FooterArea ]========== */
+#FooterArea{
+	width:100%;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+}
+#FooterArea .Case{
+	padding:10px 0 20px 180px;
+	border-top:1px solid #CCCCCC;
+}
+#FooterArea a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#FooterArea a:hover{text-decoration:underline;}
+#FooterArea .Link{}
+#FooterArea .Copy{
+	padding:5px 0;
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+body.English #FooterArea,
+body.English #FooterArea .Copy{font-family:'Maven Pro',Arial, Helvetica, sans-serif;}
+
+//  sp/optout.html sp/idfa.html sp/adid.html
+
+#idfa {
+    margin:20px 0;
+}
+
+ul#idfa  li{
+    margin:30px 0 20px 10px;
+}
+
+.optout-capture {
+    margin: 15px 0;
+}

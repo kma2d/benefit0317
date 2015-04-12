@@ -1,0 +1,358 @@
+html,body,h1,nav {
+  margin:0;
+  padding:0;
+  font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/*-----------top bar ---------------*/
+.top-bar {
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+  text-align: left; 
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.top-bar .wrapper {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-bar h1 {
+  float: left;
+}
+
+.top-bar nav {
+  float: right;
+  color: #444;
+  margin: 0 0 0 30px;
+}
+
+.top-bar nav ul {
+  float: left;
+  color: #444;
+  margin: 0 0 0 30px;
+}
+
+.top-bar nav ul li {
+  position: relative;
+  display: inline-block;
+}
+
+.top-bar nav ul li a{
+  color: #fff;
+  padding: 0 10px;
+  display: inline-block;
+  line-height: 30px;
+  border-radius: 3px;
+  -webkit-transition: background .25s ease;
+  transition: background .25s ease;
+}
+
+/*---------main section-------------*/
+
+.main {
+  height: 100vh;
+  /*margin-top: -50px;*/
+  /*padding: 60px 0;*/
+  background: #222;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  color: #fff;
+  min-height: 400px;
+}
+
+.main .image {
+  background: url("/images/bg01.jpg") center center no-repeat;
+  background-size:cover;
+  /*background-attachment: fixed;*/
+  z-index: -1;
+  opacity: .25;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+  margin-top: -110px;
+  left: 0;
+  right: 0;
+}
+
+.headline h1 {
+  font-size: 1.875rem;
+  line-height: 45px;
+  font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.headline p {
+  font-size: 16px;
+  max-width: 500px;
+  opacity: .75;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.headline a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*--------concept section----------*/
+.concept {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #999;
+  /*background-color: #edf2f4;*/
+  background-color: #fff;
+  /*background-image: url(../../img/landing-section-bg.jpg);*/
+}
+
+
+/*--------detail section----------*/
+.detail {
+  background: url("/images/bg02.jpg");
+  padding: 112.7px 0 112.7px 0;
+  width: 100%;
+  position: relative;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  text-align: center;
+  color: #fff;
+}
+
+/*--------people say------------*/
+.people-say {
+  padding: 90px 0 70px;
+  font-size: 1.25rem;
+  line-height: 28px;
+  font-family: Georgia,serif;
+  font-style: italic;
+  color: #444;
+}
+
+.people-say .layout {
+  width: 100%;
+  margin-left: -30px;
+}
+
+.people-say .layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.people-say blockquote {
+  float: left;
+  box-sizing: border-box;
+  padding-left: 60px;
+  width: 33.33333%!important;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.people-say blockquote p {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+
+.people-say footer {
+  text-align: left;
+  display: inline-block;
+  font-size: 13px;
+  font-style: italic;
+  color: #999;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.people-say footer div {
+  vertical-align: middle;
+  margin-left: 12px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.people-say footer div p{
+  margin: 0;
+}
+.people-say footer .avatar {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.people-say footer .avatar img {
+  border-radius: 50%;
+}
+
+.people-say footer a {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+/*--------works section----------*/
+
+.works {
+  background: url("/images/bg03.jpg") 0 100%;
+  /*padding: 112.7px 0 112.7px 0;*/
+  padding: 45px 10px;
+  position: relative;
+  background-size: cover !important;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/*---------Featured Perks-----------*/
+
+.featured {
+  /*background: #f5f5f5;*/
+  padding: 45px 0 45px 0;
+  color: #999;
+  background: #f5f5f5;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.07);
+  text-align: center;
+}
+
+.featured h2 {
+  padding-bottom: 45px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+  color: #666;
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+
+.featured .container {
+  /*
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 58.75em;
+  margin-left: auto;
+  margin-right: auto;
+  */
+}
+
+.featured .columns:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.featured .column {
+  float: left;
+  display: block;
+  margin-left: 1.5%;
+  width: 23%;
+  margin-bottom: 2%;
+  text-align: left;
+}
+
+.featured .column .image {
+  display: block;
+  width: 100%;
+  height: 124px;
+  background-size: contain !important;
+}
+
+.site-footer {
+  border-top: #eee;
+  background: #fff;
+  font-size: 11px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.site-footer .wrapper {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-footer ul li {
+  margin-left: 12px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-footer ul li a{
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*--------parts-----------*/
+.button {
+  background: #3cc;
+  text-shadow: #00a4a5 0px -1px 0px;
+  box-shadow: #00a4a5 0px 1px 0px;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: .05rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1rem;
+  outline: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 3px;
+  background: #3cc;
+  transition: transform .1s ease, box-shadow .1s ease, background .25s ease;
+  position: relative;
+  top: 0;
+  text-decoration: none;
+}
+
+.arrow-bottom {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(135deg);
+  content: "";
+  text-align: center;
+  margin: auto;
+  bottom: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -7.5px;
+}
