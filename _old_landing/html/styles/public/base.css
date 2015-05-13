@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*	全ページ共通CSS	*/
+
+html, body *{
+margin:0;
+padding:0;
+}
+
+body {
+margin:0;
+padding:0;
+color: #333333;
+text-align:center;
+font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+background-color: #FFFFFF;
+background-repeat: no-repeat;
+background-position: center top;
+}
+form *{font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
+table{border-collapse:collapse;}
+li{list-style-type:none;}
+
+
+/*-----[ link  ]--------------------*/
+a {text-decoration: underline;}
+a:hover {text-decoration: none;}
+a img{border:none;}
+img {
+margin:0;
+padding:0;
+}
+
+/*-----[ float ]--------------------*/
+.Float {zoom: 100%;}
+.Float:after {
+content: " "; 
+clear: both; 
+height: 0; 
+display: block; 
+visibility: hidden;
+}
+.FloatL{float:left;}
+.FloatR{float:right;}
+
+
+/*-----[ parts ]--------------------*/
+.Hidden{display:none;}
+.TextC{text-align:center;}
+.TextR{text-align:right;}
+.TextL{text-align:left;}
+.Block{
+	display:block;
+	text-indent:-5000px;
+	background-repeat:no-repeat;
+}
+a.Block, input.Block, button.Block{
+	overflow:hidden;
+	text-decoration:none;
+	background-position:100% 100%;
+}
+a.Block:hover, input.Block:hover, button.Block:hover, span.Block{background-position:0 0;}

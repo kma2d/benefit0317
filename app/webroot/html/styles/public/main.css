@@ -1,0 +1,630 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------------
+	■共通
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+	共通
+-------------------------------------------------- */
+body{
+	color:#111111;
+	font-size:12px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+a{color:#111111;}
+#HeaderArea,
+#SideArea,
+#PageCase{
+	visibility:hidden;
+}
+body #HeaderArea,
+body #HeaderArea *,
+body #page9_2,
+body #page9_2 *{
+	visibility:visible !important;
+}
+body #HeaderArea{min-width:1000px;}
+#Loading{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-5000px;
+}
+.Page{
+	position:relative;
+	overflow:hidden;
+}
+.PageCase{
+	background-position:0 50%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+.BgImage1{
+	width:100%;
+	height:100%;
+	background-image:url(./images/public/Main_Bg01.png);
+	background-repeat:repeat;
+	background-position:100% 0;
+	position:fixed;
+	z-index:0;
+}
+.BgImage2{
+	width:100%;
+	height:100%;
+	background-image:url(./images/public/Main_Bg02.png);
+	background-repeat:repeat;
+	background-position:100% 0;
+	position:fixed;
+	z-index:0;
+}
+#page_case1{background-color:#96C62F; background-image:url(./images/public/Main_Bg1.png);}
+#page_case2{background-color:#EA9947; background-image:url(./images/public/Main_Bg2.png);}
+#page_case3{background-color:#C5C32F; background-image:url(./images/public/Main_Bg3.png);}
+#page_case4{background-color:#66BB54; background-image:url(./images/public/Main_Bg4.png);}
+#page_case5{background-color:#E25C5C; background-image:url(./images/public/Main_Bg5.png);}
+#page_case6{background-color:#EB92A1; background-image:url(./images/public/Main_Bg6.png);}
+#page_case7{background-color:#60C8C7; background-image:url(./images/public/Main_Bg7.png);}
+#page_case8{background-color:#53A0D6; background-image:url(./images/public/Main_Bg8.png);}
+#page_case9{background-color:#BD7EE0; background-image:url(./images/public/Main_Bg9.png);}
+#page_case10{background-color:#BBBBBB;}
+
+
+
+/* --------------------------------------------------
+	Top
+-------------------------------------------------- */
+.Page .BgText{display:none;}
+/*
+.Page .BgText{
+	display:block;
+	color:#FFFFFF;
+	font-size:100px;
+	font-weight:bold;
+	text-align:left;
+	font-family:'Maven Pro', Meiryo, 'Hiragino Kaku Gothic Pro', Osaka, 'MS PGothic', sans-serif;
+	letter-spacing:-2px;
+	opacity:0.2;
+	position:absolute;
+	left:240px;
+	top:300px;
+}
+*/
+.Page .Box{
+	width:780px;
+	height:550px;
+	color:#111111;
+	text-align:center;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:500;
+}
+
+
+
+.Page .Box .BtnNext,
+.Page .Box .BtnPrev{
+	width:43px;
+	height:77px;
+	position:absolute;
+	top:236px;
+}
+.Page .Box .BtnNext{
+	background-image:url(./images/public/Common_Btn05.png);
+	background-position:100% 100%;
+	right:0;
+	z-index:700;
+}
+.Page .Box .BtnPrev{
+	background-image:url(./images/public/Common_Btn04.png);
+	background-position:100% 100%;
+	left:0;
+	z-index:800;
+}
+.Page .BtnArea{
+	padding-left:180px;
+	display:block;
+	height:50px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:1050;
+}
+.Page .BtnArea span{
+	width:391px;
+	height:50px;
+	margin:0 auto;
+	display:block;
+}
+.Page .BtnArea span .OtherPage{
+	width:50px;
+	height:50px;
+	text-indent:-5000px;
+	background-image:url(./images/public/Common_Btn18.png);
+	background-position:100% 100%;
+	background-repeat:no-repeat;
+}
+.Page .BtnArea .BtnNPage{
+	width:340px;
+	height:50px;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:50px;
+	text-indent:0;
+	text-align:center;
+	background-image:url(./images/public/Common_Btn12.png);
+	background-position:100% 100%;
+	background-repeat:no-repeat;
+}
+.Sub .BtnArea .BtnNPage{background-image:url(./images/public/Common_Btn13.png);}
+#page1 .BtnArea .BtnNPage{background-image:url(./images/public/Common_Btn15_L.png); width:391px;}
+#page2 .BtnArea .BtnNPage{background-image:url(./images/public/Common_Btn15.png);}
+#pageA .BtnArea .BtnNPage{background-image:url(./images/public/Common_Btn14.png);}
+
+.Sub .BtnArea span .OtherPage{background-image:url(./images/public/Common_Btn17.png);}
+#page2 .BtnArea span .OtherPage,
+#page3 .BtnArea span .OtherPage{background-image:url(./images/public/Common_Btn16.png);}
+
+.Page .BtnArea .BtnNPage:hover{background-position:0 0;}
+.Page .BtnArea .OtherPage:hover{background-position:0 0;}
+.Page .Box .BtnNext:hover{background-position:100% 0;}
+.Page .Box .BtnPrev:hover{background-position:0 0;}
+.Page .Box .BtnNP01:hover{background-position:100% 0;}
+.Page .Box .BtnNP02:hover{background-position:100% 0;}
+
+.Page .Box h3,
+.Page .Box h4{
+	padding:0 0 7px;
+	color:#FFFFFF;
+	font-size:26px;
+	line-height:1.4em;
+	position:relative;
+	z-index:50;
+}
+.Page .Box .TxtLink{
+	padding:10px 0;
+	font-weight:bold;
+	text-align:center;
+	position:relative;
+	z-index:520;
+}
+.Page .Box .TxtLink a{
+	padding:0 15px 0 0;
+	color:#FFFFFF;
+	font-size:12px;
+/*	background:url(.../images/public/Common_Icon12.png) no-repeat 100% 30%; */
+}
+.Page .Box .Text{
+	font-size:14px;
+	line-height:1.5em;
+	position:relative;
+	z-index:60;
+}
+.Page .Box .Text span{
+	display:block;
+	padding:10px 0 0 0;
+	font-size:12px;
+	line-height:1.5em;
+}
+.Page .Box .Img{
+	width:780px;
+	height:420px;
+	text-align:center;
+	position:absolute;
+	top:100px;
+	left:0;
+	z-index:0;
+	display:none;
+}
+.Page .Box #FooterArea .Case{
+	padding:0 0 20px 0;
+	border-top:none;
+}
+
+/* --------------------------------------------------
+	Sub
+-------------------------------------------------- */
+body .Sub .Box{
+	width:780px;
+	height:550px;
+	padding:0;
+	text-align:center;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:550;
+}
+
+
+.Sub .Column2 .FloatL{
+	width:370px;
+	padding:0 10px;
+}
+.Sub .Column3 .FloatL{
+	width:240px;
+	padding:0 10px;
+}
+.Sub .Float .FloatL .Img{
+	height:240px;
+	position:relative;
+	top:0;
+	left:0;
+}
+.Sub .Column2 .FloatL .Img{width:370px;}
+.Sub .Column3 .FloatL .Img{width:240px;}
+.Sub .Float .FloatL h4,
+.Sub .Float .FloatL .Text{text-align:left;}
+.Sub .Float .FloatL h4{font-size:16px;}
+.Sub .Float .FloatL .Text{line-height:1.8em;}
+#page6_2 .Box h4,
+#page9_2 .Box h4{font-size:26px;}
+
+.NumberArea{
+	padding:60px 60px 60px 200px;
+	font-weight:bold;
+	line-height:40px;
+	text-align:left;
+	background:url(./images/public/Main_Bg03.png) no-repeat 50% 50% fixed;
+	background-color:#FFFFFF;
+}
+.NumberArea .Float{height:180px;}
+.NumberArea .Float strong{
+	width:500px;
+	display:block;
+	color:#CCCCCC;
+	font-size:30px;
+}
+.NumberArea .Float span{
+	padding:0 0 0 25px;
+	color:#CCCCCC;
+	font-size:22px;
+	background:url(./images/public/Common_Icon08.png) no-repeat 0 50%;
+}
+.NumberArea .Float p{
+	width:100%;
+	font-size:124px;
+	font-family:'Maven Pro';
+	letter-spacing:-8px;
+	line-height:124px;
+	text-align:right;
+}
+.Partner{background:url(./images/public/Main_Bg04.png) no-repeat 50% 50% fixed;}
+.Random{
+	height:300px;
+	padding:0 60px 0 160px;
+	position:relative;
+}
+.Random p{
+	width:100%;
+	position:absolute;
+	font-family:'Maven Pro';
+	font-weight:bold;
+	line-height:1em;
+	display:inline;
+	width:auto;
+}
+.Random .Num01{
+	top:30px;
+	left:250px;
+	color:#F2F2F2;
+	font-size:220px;
+	letter-spacing:-10px;
+}
+.Random .Num02{
+	top:30px;
+	left:900px;
+	color:#D8D8D8;
+	font-size:20px;
+}
+.Random .Num03{
+	top:210px;
+	left:290px;
+	color:#A0A0A0;
+	font-size:20px;
+}
+.Random .Num04{
+	top:50px;
+	left:220px;
+	color:#CECECE;
+	font-size:40px;
+	letter-spacing:-2px;
+}
+.Random .Num05{
+	top:150px;
+	right:20px;
+	color:#CCCCCC;
+	font-size:120px;
+	letter-spacing:-8px;
+}
+
+
+
+/* --------------------------------------------------
+	Images
+-------------------------------------------------- */
+.Page .Box .Img img{background-color:transparent;}
+
+
+
+
+/* --------------------------------------------------
+	Slider
+-------------------------------------------------- */
+#page1 #Slide ul,
+#page1 #Slide ul li{
+	width:780px;
+	height:430px;
+	position:relative;
+}
+#page1 #Slide ul li{
+	top:-2px;
+	background:no-repeat 0 0;
+}
+#page1 #Slide ul li .Img{
+	height:420px;
+	display:block;
+	top:101px;
+}
+#page1 #Slide .bx-wrapper{position:relative;}
+#page1 #Slide .bx-wrapper .bx-pager{
+	zoom: 100%;
+	width:110px;
+	margin:0 auto;
+	padding:0 0 20px;
+}
+#page1 #Slide .bx-wrapper .bx-pager:after {
+content: " "; 
+clear: both; 
+height: 0; 
+display: block; 
+visibility: hidden;
+}
+#page1 #Slide .bx-wrapper .bx-pager a{
+	width:12px;
+	height:12px;
+	overflow:hidden;
+	margin:0 5px;
+	padding:0;
+	float:left;
+	display:block;
+	text-indent:-5000px;
+	background:url(./images/public/Main_Btn02.png) no-repeat 100% 100%;
+}
+#page1 #Slide .bx-wrapper .bx-pager a.pager-active,
+#page1 #Slide .bx-wrapper .bx-pager a:hover{background-position:0 0;}
+#page1 #Slide .bx-wrapper .bx-prev,
+#page1 #Slide .bx-wrapper .bx-next{
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	display:block;
+	text-indent:-5000px;
+	background-position:100% 100%;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:250px;
+	display:none;
+}
+#page1 #Slide .bx-wrapper .bx-prev:hover,
+#page1 #Slide .bx-wrapper .bx-next:hover{background-position:0 0;}
+#page1 #Slide .bx-wrapper .bx-prev{background-image:url(./images/public/Common_Btn06.png); left:0;}
+#page1 #Slide .bx-wrapper .bx-next{background-image:url(./images/public/Common_Btn07.png); right:0;}
+#page1 .Box .BtnL{
+	width:520px;
+	height:30px;
+	margin:0 auto;
+	padding:15px 0 11px;
+	color:#FFFFFF;
+	font-size:22px;
+	font-weight:bold;
+	line-height:30px;
+	text-indent:0;
+	text-align:center;
+	text-decoration:none;
+	background-image:url(./images/public/Main_Btn01.png);
+}
+#page1 .Box .BtnL span{font-size:28px; line-height:1.3em;}
+#page1 .Box .BtnL:hover{color:#FFCC00}
+
+
+/* --------------------------------------------------
+	Movie
+-------------------------------------------------- */
+#page9_2 .Box,
+#page9_2 .Box div{padding:0; background-color:transparent;}
+#page9_2 .Box #FlashArea{
+	width:540px;
+	height:404px;
+	padding:20px 0 0 50px;
+}
+#page9_2 .Box #FlashArea,
+#page9_2 .Box #FlashArea *{
+	margin:0 auto;
+	position:relative;
+	z-index:600;
+}
+#page9_2 .Box .MolieList{
+	width:180px;
+	margin:0 auto;
+	padding:20px 0 0 0;
+}
+#page9_2 .Box .MolieList li{
+	width:120px;
+	height:36px;
+	float:left;
+	margin:0 0 10px;
+	padding:0 0 0 60px;
+	font-size:14px;
+	font-weight:bold;
+	line-height:36px;
+	text-align:left;
+	background-repeat:no-repeat;
+	background-position:0 100%;
+	cursor:pointer;
+}
+#page9_2 .Box .MolieList li:hover{background-position:0 50%;}
+#page9_2 .Box .MolieList li.Now{background-position:0 0;}
+#page9_2 .Box .MolieList li.Now:hover{background-position:0 0;}
+#page9_2 .Box .MolieList #Player01{background-image:url(./images/public/Movie_Btn_01.gif);}
+#page9_2 .Box .MolieList #Player02{background-image:url(./images/public/Movie_Btn_02.gif);}
+#page9_2 .Box .MolieList #Player03{background-image:url(./images/public/Movie_Btn_03.gif);}
+
+
+/* --------------------------------------------------
+	Tab
+-------------------------------------------------- */
+.Page .Box #TabContent{
+	width:620px;
+	height:450px;
+	padding:1px;
+	margin:50px auto 0;
+	border:1px solid #D7D7D7;
+	position:relative;
+}
+.Page .Box #TabContent ul{
+	height:34px;
+	color:#FFFFFF;
+	background:#EF8200;
+}
+.Page .Box #TabContent ul li{
+	width:206px;
+	height:30px;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:30px;
+	border-left:1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+	background-color:#999999;
+	cursor:pointer;
+}
+.Page .Box #TabContent ul .Tab01{border-left:0;}
+.Page .Box #TabContent ul li:hover{background-color:#B7B7B7;}
+.Page .Box #TabContent ul li.Now{
+	border-bottom:1px solid #EF8200;
+	background-color:#EF8200;
+}
+.Page .Box #TabContent ul li.Soon{
+	color:#888888;
+	background-color:#999999;
+}
+.Page .Box #TabContent div{
+	width:620px;
+	height:356px;
+	padding:30px 0;
+	display:none;
+	background:#FFFFFF;
+	position:absolute;
+	text-align:center;
+}
+.Page .Box #TabContent div p{
+	color:#EE8100;
+	font-size:22px;
+}
+
+
+
+
+/* --------------------------------------------------
+	Company
+-------------------------------------------------- */
+#pageA{
+	background-image:url(./images/public/Main_FooterBg01.gif);
+	background-position:0 50%;
+	background-repeat:repeat-x;
+	background-attachment:scroll;
+}
+#pageA .Box{
+	width:720px;
+	padding:0 30px;
+	background:url(./images/public/Main_FooterBg02.gif) no-repeat 50% 0;
+}
+#pageA .Box div.FloatL{
+	width:300px;
+	height:220px;
+	padding:20px 30px 5px;
+	text-align:left;
+}
+#pageA .Box div.FloatL h3{
+	padding:0;
+	color:#222222;
+	font-size:14px;
+	font-weight:bold;
+}
+#pageA .Box div.FloatL h3 a.FloatR{
+	padding:0 15px 0 0;
+	color:#FFFFFF;
+	font-size:12px;
+/*	background:url(.../images/public/Common_Icon12.png) no-repeat 100% 30%; */
+}
+#pageA .Box #InfoTech dl dt,
+#pageA .Box #InfoNews dl dt{
+	padding:6px 0 0 0;
+	color:#FFFFFF;
+	font-size:10px;
+	font-weight:bold;
+}
+#pageA .Box #InfoCompany dl dt,
+#pageA .Box #InfoCompany dl dd{padding:15px 8px 0 0;}
+#pageA .Box #InfoCompany dl dt{width:123px;}
+#pageA .Box #InfoCompany dl dd{width:170px;}
+#pageA .Box #InfoFacebook{position:relative;}
+#pageA .Box #InfoFacebook img{
+	position:absolute;
+	top:49px;
+	left:41px;
+}
+#pageA #FooterArea{
+	width:100%;
+	height:auto;
+	padding:10px 0 0;
+	text-align:center;
+}
+
+
+/* --------------------------------------------------
+	English
+-------------------------------------------------- */
+body.English{font-family:Arial, Helvetica, sans-serif;}
+
+body.English .Page .Box h3,
+body.English .Page .Box h4{
+	font-family:'Maven Pro', Meiryo, 'Hiragino Kaku Gothic Pro', Osaka, 'MS PGothic', sans-serif;
+	line-height:1.1em;
+}
+body.English .Page .Box h3{font-size:30px;}
+body.English .Page .Box .Text{
+	font-size:16px;
+	line-height:1.5em;
+}
+body.English .Float .FloatL h4{font-size:17px;}
+body.English .Sub .Float .FloatL .Text{font-size:14px;}
+body.English #page6_2 .Box h4,
+body.English #page9_2 .Box h4{font-size:30px;}
+
+
+body.English #page1 .Box .BtnL{
+	font-size:20px;
+	line-height:26px;
+}
+body.English #pageA .Box #InfoCompany dl dt{width:130px;}
+body.English #pageA .Box #InfoCompany dl dd{width:165px;}
+body.English #pageA .Box #InfoFacebook img{top:45px;}
+
+
+
+body.English .Page .BtnArea .BtnNPage{font-family:'Maven Pro',Arial, Helvetica, sans-serif;}
+body.English .Page .BtnArea .Line2{
+	padding:9px 0;
+	height:32px;
+	line-height:16px;
+}
