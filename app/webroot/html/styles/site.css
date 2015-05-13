@@ -74,7 +74,7 @@ ul, li {
 }
 
 .main .image {
-  background: url("/images/bg01.jpg") center center no-repeat;
+  background: url("/html/images/bg01.jpg") center center no-repeat;
   background-size:cover;
   /*background-attachment: fixed;*/
   z-index: -1;
@@ -132,7 +132,7 @@ ul, li {
 
 /*--------detail section----------*/
 .detail {
-  background: url("/images/bg02.jpg");
+  background: url("/html/images/bg02.jpg");
   padding: 112.7px 0 112.7px 0;
   width: 100%;
   position: relative;
@@ -223,7 +223,7 @@ ul, li {
 /*--------works section----------*/
 
 .works {
-  background: url("/images/bg03.jpg") 0 100%;
+  background: url("/html/images/bg03.jpg") 0 100%;
   /*padding: 112.7px 0 112.7px 0;*/
   padding: 45px 10px;
   position: relative;
